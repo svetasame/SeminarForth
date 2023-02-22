@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\KovalenkoS\\.nuget\\packages\\": {}
+    "C:\\Users\\bksan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\обучение Гик Брейнс\\ДЗ\\SeminarForth\\task1\\task1.csproj",
+      "projectUniqueName": "J:\\УЧЕБА ГИК БРЕЙНС\\languages\\forthseminar\\SeminarForth\\task1\\task1.csproj",
       "projectName": "task1",
-      "projectPath": "D:\\обучение Гик Брейнс\\ДЗ\\SeminarForth\\task1\\task1.csproj",
-      "packagesPath": "C:\\Users\\KovalenkoS\\.nuget\\packages\\",
-      "outputPath": "D:\\обучение Гик Брейнс\\ДЗ\\SeminarForth\\task1\\obj\\",
+      "projectPath": "J:\\УЧЕБА ГИК БРЕЙНС\\languages\\forthseminar\\SeminarForth\\task1\\task1.csproj",
+      "packagesPath": "C:\\Users\\bksan\\.nuget\\packages\\",
+      "outputPath": "J:\\УЧЕБА ГИК БРЕЙНС\\languages\\forthseminar\\SeminarForth\\task1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KovalenkoS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\bksan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
