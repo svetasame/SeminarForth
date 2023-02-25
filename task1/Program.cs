@@ -28,18 +28,38 @@
 //  задача 26 напишите программу которая принмает на вход число и 
 //выдает количество цифр в числе 456 --3 6699 - 4 
 
-int res = HowMany();
-Console.WriteLine($"В числе количество цифр: {res}");
-  
-  int HowMany()
+
+// HowMany();
+
+// int HowMany()
+// {
+// System.Console.WriteLine("Введите число:");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int i = 0;
+// while (num > 0)
+// {
+//   num/=10;
+//   i++;
+
+//   }
+// Console.WriteLine($"В числе количество цифр: {i}");
+// return i;
+// }
+
+// задача 28 принимает на вход число н и выдает произведение чисел от 1 до н
+
+Production();
+int Production()
 {
 System.Console.WriteLine("Введите число:");
-int num = int.Parse(Console.ReadLine());
-int i = 0;
-while (num > 0)
+int N = Convert.ToInt32(Console.ReadLine());
+int j = 1;
+int res = j;
+while (j <= N)
 {
-  num/=10;
-  i++;
-  }
-return i;
+  res=res*j;
+  j++;
+}
+Console.WriteLine($"Произведение чисел = {res}");
+return res;
 }
