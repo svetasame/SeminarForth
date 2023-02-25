@@ -29,26 +29,27 @@
 //выдает количество цифр в числе 456 --3 6699 - 4 
 
 
-// HowMany();
-
-// int HowMany()
-// {
-// System.Console.WriteLine("Введите число:");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int i = 0;
-// while (num > 0)
-// {
-//   num/=10;
-//   i++;
-
-//   }
-// Console.WriteLine($"В числе количество цифр: {i}");
-// return i;
-// }
-
-// задача 28 принимает на вход число н и выдает произведение чисел от 1 до н
-
+HowMany();
 Production();
+
+
+int HowMany()
+{
+System.Console.WriteLine("Введите число:");
+int num = Convert.ToInt32(Console.ReadLine());
+int i = 0;
+while (num > 0)
+{
+  num/=10;
+  i++;
+
+  }
+Console.WriteLine($"В числе количество цифр: {i}");
+return i;
+}
+
+//задача 28 принимает на вход число н и выдает произведение чисел от 1 до н
+
 int Production()
 {
 System.Console.WriteLine("Введите число:");
