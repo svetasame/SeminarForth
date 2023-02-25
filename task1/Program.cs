@@ -67,9 +67,12 @@
 
 
 // вариант от группы задача 26
-Task1();
-System.Console.WriteLine();
-Task2();
+// Task1();
+// System.Console.WriteLine();
+// Task2();
+// System.Console.WriteLine();
+Task3();
+
 #region // для сворачивания задачи 26
 static void Task1 () 
 {
@@ -103,5 +106,24 @@ static int MultiPly (int number)
   for (int i = 1; i<= number; i++)
 {result *= i;}
   return result;
+}
+#endregion
+
+
+// выводит массив из 8 элементов заполненный нулями и единицами в случайном порядке
+
+#region
+static void Task3()
+{
+Random rran = new Random();
+int [] array = new int [8];
+// var str = string.Join(" ", array);
+
+for (int i = 0; i <array.Length; i++)
+{
+  array [i] = rran.Next (0,2);
+}
+var str = string.Join(" ", array); // вывести массив одной строкой без цикла
+Console.WriteLine ($"Массив из 8 случайных элементов: {str}");
 }
 #endregion
