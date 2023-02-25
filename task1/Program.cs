@@ -29,38 +29,79 @@
 //выдает количество цифр в числе 456 --3 6699 - 4 
 
 
-HowMany();
-Production();
+// HowMany();
+// System.Console.WriteLine();
+// Production();
 
 
-int HowMany()
+// long HowMany()
+// {
+// System.Console.WriteLine("Введите число:");
+// long num = Convert.ToInt64(Console.ReadLine());
+// long i = 0;
+// while (num > 0)
+// {
+//   num/=10;
+//   i++;
+
+//   }
+// Console.WriteLine($"В числе количество цифр: {i}");
+// return i;
+// }
+
+// //задача 28 принимает на вход число н и выдает произведение чисел от 1 до н
+// long Production()
+// {
+// System.Console.WriteLine("Введите число:");
+// long N = Convert.ToInt64(Console.ReadLine());
+// long j = 1;
+// long res = j;
+// while (j <= N)
+// {
+//   res=res*j;
+//   j++;
+// }
+// Console.WriteLine($"Произведение чисел = {res}");
+// return res;
+// }
+
+
+// вариант от группы задача 26
+Task1();
+System.Console.WriteLine();
+Task2();
+#region // для сворачивания задачи 26
+static void Task1 () 
 {
-System.Console.WriteLine("Введите число:");
-int num = Convert.ToInt32(Console.ReadLine());
-int i = 0;
-while (num > 0)
+int number = Prompt("Введите число: ");
+Count (number);
+}
+static int Prompt(string message)
 {
-  num/=10;
-  i++;
+System.Console.WriteLine("Введите число: ");
+int result = Convert.ToInt32(Console.ReadLine());
+return result;
+}
+static void Count (int number)
+{
+char [] array = number.ToString().ToCharArray();
+Console.WriteLine ($"Количество цифр в числе: {array.Length}");
+}
+#endregion
 
-  }
-Console.WriteLine($"В числе количество цифр: {i}");
-return i;
+#region // для сворачивания задачи 2
+static void Task2()
+{
+  int number = Prompt("Введите число: ");
+int result = MultiPly (number);
+Console.WriteLine ($"Произведение чисел: {result}");
 }
 
-//задача 28 принимает на вход число н и выдает произведение чисел от 1 до н
-
-int Production()
+static int MultiPly (int number)
 {
-System.Console.WriteLine("Введите число:");
-int N = Convert.ToInt32(Console.ReadLine());
-int j = 1;
-int res = j;
-while (j <= N)
-{
-  res=res*j;
-  j++;
+  int result = 1;
+  for (int i = 1; i<= number; i++)
+{result *= i;}
+  return result;
 }
-Console.WriteLine($"Произведение чисел = {res}");
-return res;
-}
+#endregion
